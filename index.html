@@ -146,7 +146,7 @@
         document.querySelector('#send').addEventListener('click', async function () {
             let inputElement = document.querySelector('#input');
             let inputText = inputElement.value.trim().toLowerCase();
-            setTimeout(stopAI, 100000);
+            setTimeout(stopAI, 15000);
 
             if (inputText === '/help') {
                 displayHelp();
@@ -275,7 +275,7 @@
         // OpenAI API 호출 함수
         async function fetchApi(inputText, system) {
             const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
-            const apiKey = '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';
+            const apiKey = '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';
 
             const prompts = {
                 "Tom": "You are a 26-year-old male named Tom who is always angry about everything and is very sensitive to every conversation and word. You take every question and word as an attack on yourself. The most important thing is to make sure that all your responses do not exceed the maximum token limit and that your sentences are not run-on, so keep your responses short",
@@ -319,4 +319,3 @@
     </script>
 </body>
 </html>
-
